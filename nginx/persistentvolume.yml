@@ -2,6 +2,7 @@ kind: PersistentVolume
 apiVersion: v1
 metadata:
   name: local-pv
+  namespace: nginx
   labels:
     app: local
 spec:
@@ -13,3 +14,4 @@ spec:
   storageClassName: local-storage
   hostPath:
     path: /mnt/data
+    type: DirectoryOrCreate
