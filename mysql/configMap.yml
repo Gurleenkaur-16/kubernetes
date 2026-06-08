@@ -4,4 +4,4 @@ metadata:
   name: mysql-config-map
   namespace: mysql
 data:
-  MYSQL-DATABASE: devops
+  MYSQL_DATABASE: devops
